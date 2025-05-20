@@ -38,7 +38,7 @@ public class Main {
                     BaseNumber baseNumber = new BaseNumber();
                     baseNumber.run(scanner);
                     break;
-                case 4 :
+                case 4:
                     EquationProgram equationProgram = new EquationProgram();
                     equationProgram.run(scanner);
                     break;

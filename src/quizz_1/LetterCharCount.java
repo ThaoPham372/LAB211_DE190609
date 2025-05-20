@@ -12,10 +12,12 @@ public class LetterCharCount {
     // Construtor
     public LetterCharCount() {
     }
+
     // Getter and Setter
     public String getContent() {
         return content;
     }
+
     public void setContent(String content) {
         this.content = content;
     }

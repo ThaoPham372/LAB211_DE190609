@@ -1,5 +1,6 @@
 package quizz_1;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class BaseNumber {
@@ -9,13 +10,14 @@ public class BaseNumber {
     private int outputBase;
 
     // Constructor
-    public BaseNumber() {}
+    public BaseNumber() {
+    }
 
     // Method chuyển từ hệ bất kỳ sang thập phân
     private int toDecimal(String val, int base) {
         val = val.toUpperCase();
         int result = 0;
-        int power = 1;
+        int power = 1; // Lũy thừa của cơ số, bắt đầu từ hàng đơn vị (base^0)
 
         for (int i = val.length() - 1; i >= 0; i--) {
             char ch = val.charAt(i);

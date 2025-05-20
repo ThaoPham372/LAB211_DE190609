@@ -7,19 +7,24 @@ public class LinearSearch {
     // Attribute
     private int[] array;
     private int searchValue;
+
     // Constructor
-    public LinearSearch(){
+    public LinearSearch() {
     }
+
     // Getter and Setter
     public int[] getArray() {
         return array;
     }
+
     public void setArray(int[] array) {
         this.array = array;
     }
+
     public int getSearchValue() {
         return searchValue;
     }
+
     public void setSearchValue(int searchValue) {
         this.searchValue = searchValue;
     }
@@ -27,14 +32,14 @@ public class LinearSearch {
     // Method
     private void createRandomArray() {
         Random random = new Random();
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             array[i] = random.nextInt(10);
         }
     }
 
     private void displayArray() {
         System.out.print("The array : [");
-        for (int i = 0; i < array.length; i++){
+        for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
             if (i < array.length - 1) {
                 System.out.print(", ");
@@ -43,8 +48,8 @@ public class LinearSearch {
         System.out.println("]");
     }
 
-    private int linearSearch(){
-        for (int i = 0; i < array.length; i++){
+    private int linearSearch() {
+        for (int i = 0; i < array.length; i++) {
             if (array[i] == searchValue) {
                 return i;
             }
@@ -55,8 +60,8 @@ public class LinearSearch {
     private void performSearchAndDisplayResult() {
         int index = linearSearch();
         if (index != -1) {
-            System.out.println("Found " + searchValue + " at index: " + index );
-        }else {
+            System.out.println("Found " + searchValue + " at index: " + index);
+        } else {
             System.out.println(searchValue + " not found in the array.");
         }
     }
@@ -83,6 +88,6 @@ public class LinearSearch {
             System.out.println("Invalid input. Please enter a valid integer.");
             scanner.nextLine();
         }
-        }
     }
+}
 

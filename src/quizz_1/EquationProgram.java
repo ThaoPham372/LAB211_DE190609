@@ -11,6 +11,7 @@ public class EquationProgram {
     // Constructor
     public EquationProgram() {
     }
+
     public EquationProgram(float a, float b, float c) {
         this.a = a;
         this.b = b;
@@ -21,18 +22,23 @@ public class EquationProgram {
     public float getA() {
         return a;
     }
+
     public void setA(float a) {
         this.a = a;
     }
+
     public float getB() {
         return b;
     }
+
     public void setB(float b) {
         this.b = b;
     }
+
     public float getC() {
         return c;
     }
+
     public void setC(float c) {
         this.c = c;
     }
@@ -66,6 +72,7 @@ public class EquationProgram {
         }
     }
 
+    // Hàm nhập
     public void inputAB(Scanner scanner) {
         a = inputFloat(scanner, "Enter A: ");
         b = inputFloat(scanner, "Enter B: ");
@@ -101,6 +108,7 @@ public class EquationProgram {
         }
     }
 
+    // Hàm tính toán phương trình
     public void calculateQuadraticEquation() {
         System.out.println("----- Calculate Quadratic Equation -----");
         if (a == 0) {
@@ -122,6 +130,7 @@ public class EquationProgram {
         }
     }
 
+    // Hàm display
     public void displayNumberProperties(float... numbers) {
         // Tạo danh sách lưu các số lẻ, số chẵn, số chính phương
         List<Float> oddNumbers = new ArrayList<>();
