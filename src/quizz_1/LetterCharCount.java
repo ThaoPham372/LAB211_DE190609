@@ -22,7 +22,7 @@ public class LetterCharCount {
         this.content = content;
     }
 
-    // Method
+    // Hàm đếm từ
     private Map<String, Integer> countWords() {
         Map<String, Integer> wordCount = new LinkedHashMap<>();
         StringTokenizer tokenizer = new StringTokenizer(content);
@@ -33,6 +33,7 @@ public class LetterCharCount {
         return wordCount;
     }
 
+    // Hàm đếm ký tự
     private Map<Character, Integer> countLetters() {
         Map<Character, Integer> letterCount = new LinkedHashMap<>();
         for (char ch : content.toCharArray()) {
@@ -43,7 +44,7 @@ public class LetterCharCount {
         return letterCount;
     }
 
-    // Run Function
+    // Hàm chạy chương trình
     public void run(Scanner scanner) {
         // Enter content
         System.out.print("Enter your content: ");

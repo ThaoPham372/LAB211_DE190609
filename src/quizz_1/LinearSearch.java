@@ -30,6 +30,7 @@ public class LinearSearch {
     }
 
     // Method
+    // Hàm tạo mảng ngẫu nhiên
     private void createRandomArray() {
         Random random = new Random();
         for (int i = 0; i < array.length; i++) {
@@ -37,6 +38,7 @@ public class LinearSearch {
         }
     }
 
+    // Hàm in ra mảng
     private void displayArray() {
         System.out.print("The array : [");
         for (int i = 0; i < array.length; i++) {
@@ -48,6 +50,7 @@ public class LinearSearch {
         System.out.println("]");
     }
 
+    // Hàm tìm kiếm Linear
     private int linearSearch() {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == searchValue) {
@@ -57,6 +60,7 @@ public class LinearSearch {
         return -1;
     }
 
+    // Hàm thực hiện tìm kiếm và in ra kết quả
     private void performSearchAndDisplayResult() {
         int index = linearSearch();
         if (index != -1) {
@@ -66,6 +70,7 @@ public class LinearSearch {
         }
     }
 
+    // Hàm chạy chương trình
     public void run(Scanner scanner) {
         try {
             System.out.print("Enter number of array: ");
